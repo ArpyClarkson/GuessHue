@@ -18,8 +18,10 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback {
 
     public static final int GAME_WIDTH = 1080;
     public static final int GAME_HEIGHT = 1920;
-    public static final int GAME_COLUMNS = 10;
-    public static final int GAME_ROWS = 14;
+    public static final int GAME_COLUMNS = 9;
+    public static final int GAME_ROWS = 13;
+    public static final int GAME_TILE_WIDTH = 108;
+    public static final int GAME_TILE_HEIGHT = 108;
     private GameThread thread;
     private Background background;
     private Bitmap tile_blue;
@@ -140,8 +142,8 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback {
                 ex -= 60.0f;
                 ey -= 192.0f;
 
-                ix = (int)Math.floor(ex)/96;
-                iy = (int)Math.floor(ey)/96;
+                ix = (int)Math.floor(ex)/GAME_TILE_WIDTH;
+                iy = (int)Math.floor(ey)/ GAME_TILE_HEIGHT;
 
                 iy = Math.abs(iy - (GAME_ROWS - 1));
 
@@ -227,7 +229,7 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback {
                 c = 0;
         }
 
-        tiles[x][y] = new Tile(img, 96, 96, (60 + (96*x)), (1440 - (96*y)), c);
+        tiles[x][y] = new Tile(img, GAME_TILE_WIDTH, GAME_TILE_HEIGHT, (60 + (GAME_TILE_WIDTH*x)), (1440 - (GAME_TILE_HEIGHT *y)), c);
     }
 
     public void dropTiles(){
