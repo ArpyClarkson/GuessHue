@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="game_width">1080</integer>
+    <integer name="game_height">1920</integer>
+    <integer name="grid_size_x">9</integer>
+    <integer name="grid_size_y">13</integer>
+    <integer name="tile_size_x">108</integer>
+    <integer name="tile_size_y">108</integer>
+</resources>

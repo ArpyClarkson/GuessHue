@@ -1,13 +1,15 @@
-package ht.daze.guesshue;
+package ht.daze.guesshue.object;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
+
+import ht.daze.guesshue.GameObject;
 
 /**
  * Created by Andrew on 12/28/2016.
  */
 
-public class Background {
+public class Background extends GameObject {
 
     private Bitmap image;
     private int x, y;

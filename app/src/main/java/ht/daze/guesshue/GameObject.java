@@ -15,55 +15,55 @@ public abstract class GameObject {
     protected int width;
     protected int height;
 
-    public void setX(int value) {
+    public void SetX(int value) {
         x = value;
     }
 
-    public void setY(int value) {
+    public void SetY(int value) {
         y = value;
     }
 
-    public void setDX(int value) {
+    public void SetDX(int value) {
         dx = value;
     }
 
-    public void setDY(int value) {
+    public void SetDY(int value) {
         dy = value;
     }
 
-    public void setWidth(int value) {
+    public void SetWidth(int value) {
         width = value;
     }
 
-    public void setHeight(int value) {
+    public void SetHeight(int value) {
         height = value;
     }
 
-    public int getX() {
+    public int GetX() {
         return x;
     }
 
-    public int getY() {
+    public int GetY() {
         return y;
     }
 
-    public int getDX() {
+    public int GetDX() {
         return dx;
     }
 
-    public int getDY() {
+    public int GetDY() {
         return dy;
     }
 
-    public int getWidth() {
+    public int GetWidth() {
         return width;
     }
 
-    public int getHeight() {
+    public int GetHeight() {
         return height;
     }
 
-    public Rect getRect() {
+    public Rect GetRect() {
         return new Rect(x, y, x + width, y + height);
     }
 }
